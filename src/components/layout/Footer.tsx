@@ -1,33 +1,46 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const footerLinks = {
-  products: [
-    { name: "Smart Lighting", href: "/products/lighting" },
-    { name: "Energy Metering", href: "/products/energy" },
-    { name: "Climate Control", href: "/products/climate" },
-    { name: "Security", href: "/products/security" },
-    { name: "Smart Plugs", href: "/products/plugs" },
-  ],
-  company: [
-    { name: "About Us", href: "/about" },
-    { name: "Careers", href: "/careers" },
-    { name: "Press", href: "/press" },
-    { name: "Partners", href: "/partners" },
-  ],
-  support: [
-    { name: "Help Center", href: "/support" },
-    { name: "Contact Us", href: "/contact" },
-    { name: "Warranty", href: "/warranty" },
-    { name: "Returns", href: "/returns" },
-  ],
-  legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
-    { name: "Cookie Policy", href: "/cookies" },
-  ],
+  products: {
+    title: "Products",
+    links: [
+      { name: "Smart Lighting", href: "/products/lighting" },
+      { name: "Energy Metering", href: "/products/energy" },
+      { name: "Safety & Security", href: "/products/security" },
+      { name: "Heating & Temperature", href: "/products/heating" },
+      { name: "Smart Locks", href: "/products/locks" },
+      { name: "Connectivity", href: "/products/connectivity" },
+    ],
+  },
+  solutions: {
+    title: "Solutions",
+    links: [
+      { name: "Home Automation", href: "/solutions/home" },
+      { name: "Energy Management", href: "/solutions/energy" },
+      { name: "Building Automation", href: "/solutions/building" },
+      { name: "Smart Office", href: "/solutions/office" },
+    ],
+  },
+  company: {
+    title: "Company",
+    links: [
+      { name: "About Us", href: "/about" },
+      { name: "Careers", href: "/careers" },
+      { name: "Press", href: "/press" },
+      { name: "Partners", href: "/partners" },
+      { name: "Corporate", href: "/corporate" },
+    ],
+  },
+  support: {
+    title: "Support",
+    links: [
+      { name: "Help Center", href: "/help" },
+      { name: "Knowledge Base", href: "/kb" },
+      { name: "Community", href: "/community" },
+      { name: "Contact Us", href: "/contact" },
+    ],
+  },
 };
 
 const socialLinks = [
@@ -40,138 +53,65 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-navy text-primary-foreground">
-      {/* Newsletter Section */}
-      <div className="border-b border-primary-foreground/10">
-        <div className="container mx-auto px-4 py-12 lg:px-8">
-          <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
-            <div className="text-center lg:text-left">
-              <h3 className="font-display text-xl font-bold">
-                Subscribe to our newsletter
-              </h3>
-              <p className="mt-1 text-sm text-primary-foreground/70">
-                Get the latest updates on new products and exclusive offers.
-              </p>
-            </div>
-            <div className="flex w-full max-w-md gap-2">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-navy-light border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50"
-              />
-              <Button className="shrink-0 bg-primary hover:bg-primary/90">
-                <Mail className="mr-2 h-4 w-4" />
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <footer className="bg-shelly-dark text-white">
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-12 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <span className="font-display text-xl font-bold text-primary-foreground">S</span>
-              </div>
-              <span className="font-display text-xl font-bold">SmartHome</span>
+            <Link to="/" className="inline-block mb-4">
+              <span className="shelly-logo text-3xl text-white italic font-semibold">
+                Shelly
+              </span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm text-primary-foreground/70">
-              Making homes smarter, safer, and more energy-efficient since 2012. 
-              Join millions of satisfied customers worldwide.
+            <p className="text-white/70 text-sm max-w-xs mb-6">
+              Making homes smarter with innovative IoT devices. 
+              Control, automate, and monitor your home from anywhere.
             </p>
             {/* Social Links */}
-            <div className="mt-6 flex gap-3">
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-navy-light text-primary-foreground/70 transition-colors hover:bg-primary hover:text-primary-foreground"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white/80 transition-colors hover:bg-primary hover:text-white"
                   aria-label={social.name}
                 >
-                  <social.icon className="h-4 w-4" />
+                  <social.icon className="h-5 w-5" />
                 </a>
               ))}
             </div>
           </div>
 
           {/* Links */}
-          <div>
-            <h4 className="mb-4 font-semibold">Products</h4>
-            <ul className="space-y-2">
-              {footerLinks.products.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-4 font-semibold">Company</h4>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-4 font-semibold">Support</h4>
-            <ul className="space-y-2">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-4 font-semibold">Legal</h4>
-            <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {Object.values(footerLinks).map((section) => (
+            <div key={section.title}>
+              <h4 className="font-semibold mb-4">{section.title}</h4>
+              <ul className="space-y-2">
+                {section.links.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-white/70 transition-colors hover:text-white"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-primary-foreground/10">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-primary-foreground/60 lg:flex-row lg:px-8">
-          <p>© 2024 SmartHome. All rights reserved.</p>
-          <div className="flex gap-6">
-            <span>🇺🇸 United States</span>
-            <span>$ USD</span>
+      <div className="border-t border-white/10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4 lg:px-8 py-6 text-sm text-white/60">
+          <p>© 2024 Shelly Europe. All rights reserved.</p>
+          <div className="flex flex-wrap gap-6">
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

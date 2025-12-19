@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 10%;
 
-    --primary: 220 70% 45%;
+    --primary: 209 100% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 95%;
@@ -24,21 +24,23 @@
     --muted: 220 15% 95%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 209 100% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 15% 90%;
     --input: 220 15% 90%;
-    --ring: 220 70% 45%;
+    --ring: 209 100% 45%;
 
     --radius: 0.5rem;
 
-    --navy: 220 40% 13%;
-    --navy-light: 220 30% 20%;
-    --success: 142 70% 45%;
+    /* Shelly specific colors */
+    --shelly-blue: 209 100% 45%;
+    --shelly-dark: 220 25% 10%;
+    --shelly-navy: 220 30% 15%;
+    --shelly-gray: 220 10% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -51,16 +53,16 @@
   }
 
   .dark {
-    --background: 220 40% 13%;
+    --background: 220 25% 10%;
     --foreground: 0 0% 98%;
 
-    --card: 220 35% 16%;
+    --card: 220 30% 15%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 35% 16%;
+    --popover: 220 30% 15%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 220 70% 55%;
+    --primary: 209 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 30% 20%;
@@ -69,15 +71,15 @@
     --muted: 220 30% 20%;
     --muted-foreground: 220 15% 65%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 209 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 220 30% 25%;
     --input: 220 30% 25%;
-    --ring: 220 70% 55%;
+    --ring: 209 100% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -106,10 +108,16 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
   }
   
   .font-sans {
     font-family: 'Inter', sans-serif;
+  }
+
+  .shelly-logo {
+    font-family: 'Outfit', sans-serif;
+    font-style: italic;
+    font-weight: 600;
   }
 }
