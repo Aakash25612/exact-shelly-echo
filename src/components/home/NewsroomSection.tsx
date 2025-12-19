@@ -99,14 +99,14 @@ export function NewsroomSection() {
             {/* News Card 3 - IoT themed */}
             <Link
               to={newsItems[2].link}
-              className="group bg-[#1a3a5c] rounded-lg overflow-hidden hover:shadow-md transition-all p-4"
+              className="group bg-[#2596be] rounded-lg overflow-hidden hover:shadow-md transition-all p-4"
             >
               <h3 className="text-white text-sm font-bold mb-2">{newsItems[2].title}</h3>
-              <p className="text-white/60 text-xs mb-3">{newsItems[2].subtitle}</p>
-              <p className="text-white/50 text-[10px] mb-2 line-clamp-2">
+              <p className="text-white/80 text-xs mb-3">{newsItems[2].subtitle}</p>
+              <p className="text-white/70 text-[10px] mb-2 line-clamp-2">
                 New Analyst Coverage: Shelly Group has been included in the research coverage of Joh. Berenberg...
               </p>
-              <span className="text-primary text-[10px] font-semibold">Read Article</span>
+              <span className="text-white text-[10px] font-semibold">Read Article</span>
             </Link>
 
             {/* News Card 4 - Stats */}
