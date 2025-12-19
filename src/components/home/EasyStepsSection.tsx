@@ -1,90 +1,125 @@
 import { Link } from "react-router-dom";
-import { ShoppingBag, Plug, Smartphone } from "lucide-react";
-
-const steps = [
-  {
-    number: "01",
-    icon: ShoppingBag,
-    title: "Get your Shelly device",
-    description: "Shelly offers a wide range of smart devices to suit your specific automation needs - whether you want to control lighting, heating, or appliances. Browse to find the perfect device for your home or business",
-    cta: "Shop now",
-    ctaLink: "/products",
-  },
-  {
-    number: "02",
-    icon: Plug,
-    title: "Install your Shelly device",
-    description: "Easily install your Shelly device yourself using our knowledge base, wiring videos, and step-by-step guides. If you prefer professional help, Shelly installers are available to ensure a smooth setup.",
-    cta: "See Knowledge Base",
-    ctaLink: "/help",
-  },
-  {
-    number: "03",
-    icon: Smartphone,
-    title: "Enjoy your new smart home",
-    description: "With the help of Shelly Smart Control app or any other compatible platform",
-    cta: "See Shelly App",
-    ctaLink: "/app",
-  },
-];
 
 export function EasyStepsSection() {
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop"
-          alt="Smart Home"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-shelly-dark/95 via-shelly-dark/90 to-shelly-dark/80" />
-      </div>
+      {/* Background */}
+      <div className="absolute inset-0 bg-shelly-dark" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-primary text-white text-sm font-semibold rounded-full mb-6">
+          <span className="inline-block px-4 py-1.5 bg-primary text-white text-xs font-semibold rounded-full mb-4">
             GET STARTED
           </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Smart home automation is that easy!
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">
+            Smart <span className="text-primary">home automation</span> is
           </h2>
-          <p className="text-white/70 text-lg">
+          <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
+            that easy!
+          </h2>
+          <p className="text-white/60 text-sm">
             In 3 easy steps, you can enjoy advanced automation at your home or business
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          {steps.map((step) => (
-            <div key={step.number} className="text-center md:text-left">
-              {/* Icon & Step Number */}
-              <div className="flex items-center gap-4 mb-6 justify-center md:justify-start">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                  <step.icon className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <span className="text-white/50 text-sm">Step</span>
-                  <span className="text-primary text-3xl font-bold ml-2">{step.number}</span>
-                </div>
+        {/* Steps - 3 Vertical Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Step 1 */}
+          <div className="bg-[#0a1628] rounded-xl overflow-hidden">
+            {/* Image */}
+            <div className="h-[200px] relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=300&fit=crop"
+                alt="Get your Shelly device"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] to-transparent" />
+            </div>
+            {/* Content */}
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-white/50 text-sm">Step</span>
+                <span className="text-primary text-2xl font-bold">01</span>
               </div>
-              
-              {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-white mb-4">
-                {step.title}
+              <h3 className="font-display text-lg font-bold text-white mb-3">
+                Get your Shelly device
               </h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-6">
-                {step.description}
+              <p className="text-white/60 text-sm leading-relaxed mb-4">
+                Shelly offers a wide range of smart devices to suit your specific automation needs - whether you want to control lighting, heating, or appliances.
               </p>
               <Link
-                to={step.ctaLink}
-                className="text-primary font-semibold hover:underline"
+                to="/products"
+                className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
               >
-                {step.cta}
+                Shop now
               </Link>
             </div>
-          ))}
+          </div>
+
+          {/* Step 2 */}
+          <div className="bg-[#0a1628] rounded-xl overflow-hidden">
+            {/* Image */}
+            <div className="h-[200px] relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=300&fit=crop"
+                alt="Install your Shelly device"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] to-transparent" />
+            </div>
+            {/* Content */}
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-white/50 text-sm">Step</span>
+                <span className="text-primary text-2xl font-bold">02</span>
+              </div>
+              <h3 className="font-display text-lg font-bold text-white mb-3">
+                Install your Shelly device
+              </h3>
+              <p className="text-white/60 text-sm leading-relaxed mb-4">
+                Easily install your Shelly device yourself using our knowledge base, wiring videos, and step-by-step guides.
+              </p>
+              <Link
+                to="/help"
+                className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white/20 transition-colors"
+              >
+                See Knowledge Base
+              </Link>
+            </div>
+          </div>
+
+          {/* Step 3 */}
+          <div className="bg-[#0a1628] rounded-xl overflow-hidden">
+            {/* Image */}
+            <div className="h-[200px] relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&h=300&fit=crop"
+                alt="Enjoy your new smart home"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] to-transparent" />
+            </div>
+            {/* Content */}
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-white/50 text-sm">Step</span>
+                <span className="text-primary text-2xl font-bold">03</span>
+              </div>
+              <h3 className="font-display text-lg font-bold text-white mb-3">
+                Enjoy your new smart home
+              </h3>
+              <p className="text-white/60 text-sm leading-relaxed mb-4">
+                With the help of Shelly Smart Control app or any other compatible platform
+              </p>
+              <Link
+                to="/app"
+                className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white/20 transition-colors"
+              >
+                See Shelly App
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
