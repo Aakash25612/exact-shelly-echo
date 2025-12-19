@@ -33,22 +33,22 @@ const solutions = [
 
 export function ShellySolutionsSection() {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="mb-8">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground">
+        <div className="mb-6">
+          <h2 className="font-display text-xl md:text-2xl font-bold text-foreground">
             Shelly solutions
           </h2>
         </div>
 
-        {/* Solutions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Solutions Grid - 2x2 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {solutions.map((solution) => (
             <Link
               key={solution.id}
               to={solution.link}
-              className="group relative rounded-xl overflow-hidden h-[240px] md:h-[280px]"
+              className="group relative rounded-lg overflow-hidden h-[200px] md:h-[220px]"
             >
               {/* Background Image */}
               <img
@@ -57,20 +57,20 @@ export function ShellySolutionsSection() {
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/90 via-[#0a1628]/60 to-[#0a1628]/30" />
               
               {/* Content */}
-              <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="font-display text-xl md:text-2xl font-bold text-white mb-2">
+              <div className="absolute inset-0 p-5 flex flex-col justify-end">
+                <h3 className="font-display text-lg md:text-xl font-bold text-white mb-1.5">
                   {solution.title}
                 </h3>
-                <p className="text-white/70 text-sm leading-relaxed mb-3 max-w-md">
+                <p className="text-white/60 text-xs leading-relaxed mb-2.5 max-w-sm">
                   {solution.description}
                 </p>
-                <span className="text-primary font-semibold text-sm group-hover:underline inline-flex items-center gap-1">
+                <span className="text-primary font-medium text-xs group-hover:underline inline-flex items-center gap-1">
                   Learn more
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </span>

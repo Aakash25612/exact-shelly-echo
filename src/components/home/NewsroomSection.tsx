@@ -1,85 +1,68 @@
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const newsItems = [
   {
     id: 1,
     title: "Shelly Smart Home Challenge 2025 Celebrates Top Projects",
     excerpt: "Shelly Group announced the winners of the Shelly Smart Home Challenge 2025 - its global...",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
     link: "/news/challenge-2025",
   },
   {
     id: 2,
     title: "Shelly expands in Building & Energy sectors",
     excerpt: "Shelly debuts world's first smart MCBs at IFA 2025 and expands professional circuit breaker lineup...",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400&h=300&fit=crop",
     link: "/news/building-energy",
   },
   {
     id: 3,
-    title: "Shelly Group Expands into Smart Energy Market with First Co-Branded Devices with EcoFlow",
+    title: "Shelly Group Expands into Smart Energy Market with First Co-Branded Devices",
     excerpt: "Shelly Group has announced its first co-branded devices in partnership with global energy and solar...",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop",
     link: "/news/ecoflow-partnership",
   },
   {
     id: 4,
     title: "Shelly Group Revenue Up 29.3% in H1 2025",
     excerpt: "The company doubles its professional installers, expands its global network and reaffirms its record-year forecast...",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&h=300&fit=crop",
     link: "/news/revenue-h1-2025",
   },
 ];
 
 export function NewsroomSection() {
   return (
-    <section className="py-16 bg-secondary/30">
+    <section className="py-12 bg-secondary/30">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-start justify-between mb-6">
           <div>
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
+            <h2 className="font-display text-xl md:text-2xl font-bold text-foreground mb-1">
               Shelly Newsroom
             </h2>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted-foreground text-xs">
               Catch up on the latest launches, integrations, and company milestones.
             </p>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2">
-              <button 
-                className="p-2 rounded-full border border-border hover:bg-secondary transition-colors"
-                aria-label="Previous"
-              >
-                <ChevronLeft className="h-5 w-5 text-muted-foreground" />
-              </button>
-              <button 
-                className="p-2 rounded-full border border-border hover:bg-secondary transition-colors"
-                aria-label="Next"
-              >
-                <ChevronRight className="h-5 w-5 text-muted-foreground" />
-              </button>
-            </div>
-            <Link
-              to="/news"
-              className="text-primary font-semibold hover:underline text-sm"
-            >
-              Learn more
-            </Link>
-          </div>
+          <Link
+            to="/news"
+            className="px-4 py-1.5 rounded-full border border-primary text-primary text-xs font-medium hover:bg-primary hover:text-white transition-colors"
+          >
+            Learn more
+          </Link>
         </div>
 
-        {/* News Cards - Horizontal Scroll */}
-        <div className="flex gap-4 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
+        {/* News Cards - 4 columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {newsItems.map((item) => (
             <Link
               key={item.id}
               to={item.link}
-              className="group flex-shrink-0 w-[280px] md:w-[300px] bg-card rounded-xl overflow-hidden border border-border hover:shadow-lg transition-all"
+              className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-md transition-all"
             >
               {/* Image */}
-              <div className="aspect-[3/2] overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -88,14 +71,14 @@ export function NewsroomSection() {
               </div>
               
               {/* Content */}
-              <div className="p-4">
-                <h3 className="font-semibold text-foreground text-sm mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+              <div className="p-3">
+                <h3 className="font-medium text-foreground text-xs mb-1.5 line-clamp-2 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground text-xs line-clamp-2 mb-3">
+                <p className="text-muted-foreground text-[10px] line-clamp-2 mb-2">
                   {item.excerpt}
                 </p>
-                <span className="text-primary text-xs font-semibold">
+                <span className="text-primary text-[10px] font-semibold">
                   Read Article
                 </span>
               </div>

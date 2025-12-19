@@ -53,31 +53,31 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-shelly-dark text-white">
+    <footer className="bg-[#0a1628] text-white">
       {/* Main Footer */}
-      <div className="container mx-auto px-4 lg:px-8 py-16">
+      <div className="container mx-auto px-4 lg:px-8 py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <span className="shelly-logo text-3xl text-white italic font-semibold">
+              <span className="text-2xl text-white italic font-semibold">
                 Shelly
               </span>
             </Link>
-            <p className="text-white/70 text-sm max-w-xs mb-6">
+            <p className="text-white/50 text-xs max-w-xs mb-5 leading-relaxed">
               Making homes smarter with innovative IoT devices. 
               Control, automate, and monitor your home from anywhere.
             </p>
             {/* Social Links */}
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white/80 transition-colors hover:bg-primary hover:text-white"
+                  className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/60 transition-colors hover:bg-primary hover:text-white"
                   aria-label={social.name}
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
@@ -86,13 +86,13 @@ export function Footer() {
           {/* Links */}
           {Object.values(footerLinks).map((section) => (
             <div key={section.title}>
-              <h4 className="font-semibold mb-4">{section.title}</h4>
-              <ul className="space-y-2">
+              <h4 className="font-semibold text-sm mb-3">{section.title}</h4>
+              <ul className="space-y-1.5">
                 {section.links.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-sm text-white/70 transition-colors hover:text-white"
+                      className="text-xs text-white/50 transition-colors hover:text-white"
                     >
                       {link.name}
                     </Link>
@@ -106,9 +106,9 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4 lg:px-8 py-6 text-sm text-white/60">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-3 px-4 lg:px-8 py-4 text-xs text-white/40">
           <p>© 2024 Shelly Europe. All rights reserved.</p>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link to="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
