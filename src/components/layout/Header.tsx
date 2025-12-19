@@ -20,8 +20,8 @@ export function Header() {
   const [cartCount] = useState(0);
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 px-4 lg:px-8 py-2 bg-transparent">
-      <nav className="container mx-auto">
+    <header className="sticky top-0 left-0 right-0 z-50 px-2 sm:px-4 lg:px-8 py-2 bg-transparent">
+      <nav className="w-full lg:container lg:mx-auto">
         {/* Main Header Bar */}
         <div className="bg-white rounded-full shadow-lg">
           <div className="flex h-14 items-center justify-between px-4 lg:px-6">
@@ -107,7 +107,7 @@ export function Header() {
 
       {/* Mobile Menu - Full width, outside nav container */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute left-0 right-0 top-full mt-2 mx-4 bg-white rounded-xl shadow-lg overflow-hidden z-50">
+        <div className="lg:hidden absolute left-0 right-0 top-full mt-2 mx-2 sm:mx-4 bg-white rounded-xl shadow-lg overflow-hidden z-50">
           <div className="py-4 px-6">
             <div className="flex flex-col gap-1">
               {[...leftNav, ...rightNav].map((item) => (
