@@ -35,20 +35,20 @@ const newsItems = [
 
 export function NewsroomSection() {
   return (
-    <section className="py-12 bg-background">
+    <section className="py-12 bg-[#2596be]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {/* Left Column - Header */}
           <div className="lg:col-span-1">
-            <h2 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
+            <h2 className="font-display text-xl md:text-2xl font-bold text-white mb-2">
               Shelly Newsroom
             </h2>
-            <p className="text-muted-foreground text-xs mb-4 leading-relaxed">
+            <p className="text-white/80 text-xs mb-4 leading-relaxed">
               Catch up on the latest launches, integrations, and company milestones.
             </p>
             <Link
               to="/news"
-              className="inline-block px-4 py-2 rounded-full bg-primary text-white text-xs font-medium hover:bg-primary/90 transition-colors"
+              className="inline-block px-4 py-2 rounded-full bg-white text-[#2596be] text-xs font-medium hover:bg-white/90 transition-colors"
             >
               Learn more
             </Link>
@@ -59,7 +59,7 @@ export function NewsroomSection() {
             {/* News Card 1 */}
             <Link
               to={newsItems[0].link}
-              className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-md transition-all"
+              className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -69,17 +69,17 @@ export function NewsroomSection() {
                 />
               </div>
               <div className="p-3">
-                <p className="text-foreground text-xs line-clamp-2 mb-2">
+                <p className="text-gray-900 text-xs line-clamp-2 mb-2">
                   {newsItems[0].title}
                 </p>
-                <span className="text-primary text-[10px] font-semibold">Read Article</span>
+                <span className="text-[#2596be] text-[10px] font-semibold">Read Article</span>
               </div>
             </Link>
 
             {/* News Card 2 */}
             <Link
               to={newsItems[1].link}
-              className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-md transition-all"
+              className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all"
             >
               <div className="aspect-[16/9] overflow-hidden">
                 <img
@@ -89,54 +89,54 @@ export function NewsroomSection() {
                 />
               </div>
               <div className="p-3">
-                <p className="text-foreground text-xs line-clamp-2 mb-2">
+                <p className="text-gray-900 text-xs line-clamp-2 mb-2">
                   {newsItems[1].title}
                 </p>
-                <span className="text-primary text-[10px] font-semibold">Read Article</span>
+                <span className="text-[#2596be] text-[10px] font-semibold">Read Article</span>
               </div>
             </Link>
 
             {/* News Card 3 - IoT themed */}
             <Link
               to={newsItems[2].link}
-              className="group bg-[#2596be] rounded-lg overflow-hidden hover:shadow-md transition-all p-4"
+              className="group bg-[#0a1628] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all p-4"
             >
               <h3 className="text-white text-sm font-bold mb-2">{newsItems[2].title}</h3>
               <p className="text-white/80 text-xs mb-3">{newsItems[2].subtitle}</p>
               <p className="text-white/70 text-[10px] mb-2 line-clamp-2">
                 New Analyst Coverage: Shelly Group has been included in the research coverage of Joh. Berenberg...
               </p>
-              <span className="text-white text-[10px] font-semibold">Read Article</span>
+              <span className="text-[#2596be] text-[10px] font-semibold">Read Article</span>
             </Link>
 
             {/* News Card 4 - Stats */}
             <Link
               to={newsItems[3].link}
-              className="group bg-[#f5f5f5] dark:bg-secondary rounded-lg overflow-hidden hover:shadow-md transition-all p-4"
+              className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all p-4"
             >
-              <h3 className="text-foreground text-sm font-bold mb-1">{newsItems[3].title}</h3>
-              <p className="text-muted-foreground text-[10px] mb-3">{newsItems[3].subtitle}</p>
+              <h3 className="text-gray-900 text-sm font-bold mb-1">{newsItems[3].title}</h3>
+              <p className="text-gray-500 text-[10px] mb-3">{newsItems[3].subtitle}</p>
               
               {/* Stats Grid */}
               <div className="grid grid-cols-3 gap-2 mb-3">
                 <div className="text-center">
-                  <div className="text-primary text-lg font-bold">&gt; 26.5 M<sup className="text-[8px]">*</sup></div>
-                  <div className="text-[8px] text-muted-foreground">Revenue</div>
+                  <div className="text-[#2596be] text-lg font-bold">&gt; 26.5 M<sup className="text-[8px]">*</sup></div>
+                  <div className="text-[8px] text-gray-500">Revenue</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-primary text-lg font-bold">&gt; 4.9 M<sup className="text-[8px]">**</sup></div>
-                  <div className="text-[8px] text-muted-foreground">Gross Profit</div>
+                  <div className="text-[#2596be] text-lg font-bold">&gt; 4.9 M<sup className="text-[8px]">**</sup></div>
+                  <div className="text-[8px] text-gray-500">Gross Profit</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-primary text-lg font-bold">&gt; 2.3 M<sup className="text-[8px]">***</sup></div>
-                  <div className="text-[8px] text-muted-foreground">EBITDA</div>
+                  <div className="text-[#2596be] text-lg font-bold">&gt; 2.3 M<sup className="text-[8px]">***</sup></div>
+                  <div className="text-[8px] text-gray-500">EBITDA</div>
                 </div>
               </div>
               
-              <p className="text-muted-foreground text-[10px] mb-2 line-clamp-2">
+              <p className="text-gray-500 text-[10px] mb-2 line-clamp-2">
                 The company doubles its professional installers, expands its global network and reaffirms its record-year forecast.
               </p>
-              <span className="text-primary text-[10px] font-semibold">Read Article</span>
+              <span className="text-[#2596be] text-[10px] font-semibold">Read Article</span>
             </Link>
           </div>
         </div>
