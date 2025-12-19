@@ -103,41 +103,42 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu - Separate from rounded header */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden mt-2 bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="py-4 px-6">
-              <div className="flex flex-col gap-1">
-                {[...leftNav, ...rightNav].map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="flex items-center justify-between py-3 px-3 text-sm font-medium text-shelly-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                    {item.hasDropdown && (
-                      <ChevronDown className="h-4 w-4 text-gray-400" />
-                    )}
-                  </Link>
-                ))}
-              </div>
-              
-              {/* Mobile User Actions */}
-              <div className="mt-4 pt-4 border-t border-gray-100">
+      </nav>
+
+      {/* Mobile Menu - Full width, outside nav container */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden absolute left-0 right-0 top-full mt-2 mx-4 bg-white rounded-xl shadow-lg overflow-hidden z-50">
+          <div className="py-4 px-6">
+            <div className="flex flex-col gap-1">
+              {[...leftNav, ...rightNav].map((item) => (
                 <Link
-                  to="/account"
-                  className="flex items-center gap-3 py-3 px-3 text-sm font-medium text-shelly-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
+                  key={item.name}
+                  to={item.href}
+                  className="flex items-center justify-between py-3 px-3 text-sm font-medium text-shelly-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <User className="h-5 w-5" />
-                  My Account
+                  {item.name}
+                  {item.hasDropdown && (
+                    <ChevronDown className="h-4 w-4 text-gray-400" />
+                  )}
                 </Link>
-              </div>
+              ))}
+            </div>
+            
+            {/* Mobile User Actions */}
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <Link
+                to="/account"
+                className="flex items-center gap-3 py-3 px-3 text-sm font-medium text-shelly-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <User className="h-5 w-5" />
+                My Account
+              </Link>
             </div>
           </div>
-        )}
-      </nav>
+        </div>
+      )}
     </header>
   );
 }
