@@ -1,69 +1,68 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const newsItems = [
   {
     id: 1,
-    title: "Introducing The Pill by Shelly - A New Era of Smart Sensors",
-    excerpt: "Discover our latest compact USB-C powered device that connects to various sensors and peripherals.",
-    date: "Dec 15, 2024",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-    category: "Product Launch",
-    link: "/news/the-pill-launch",
+    title: "Shelly Smart Home Challenge 2025 Celebrates Top Projects",
+    excerpt: "Shelly Group announced the winners of the Shelly Smart Home Challenge 2025 - its global...",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop",
+    link: "/news/challenge-2025",
   },
   {
     id: 2,
-    title: "Shelly Gen4 Series: The Future of Home Automation",
-    excerpt: "Our new Gen4 products feature the latest Shelly chip with multiprotocol support including Matter.",
-    date: "Dec 10, 2024",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&h=400&fit=crop",
-    category: "Technology",
-    link: "/news/gen4-series",
+    title: "Shelly expands in Building & Energy sectors",
+    excerpt: "Shelly debuts world's first smart MCBs at IFA 2025 and expands professional circuit breaker lineup...",
+    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&h=600&fit=crop",
+    link: "/news/building-energy",
   },
   {
     id: 3,
-    title: "Smart Holiday Automations: Make Your Home Festive",
-    excerpt: "Learn how to create magical holiday lighting scenes and automations with Shelly devices.",
-    date: "Dec 5, 2024",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=400&fit=crop",
-    category: "Tips & Tricks",
-    link: "/news/holiday-automations",
+    title: "Shelly Group Expands into Smart Energy Market with First Co-Branded Devices with EcoFlow",
+    excerpt: "Shelly Group has announced its first co-branded devices in partnership with global energy and solar...",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=600&fit=crop",
+    link: "/news/ecoflow-partnership",
+  },
+  {
+    id: 4,
+    title: "Shelly Group Revenue Up 29.3% in H1 2025",
+    excerpt: "The company doubles its professional installers, expands its global network and reaffirms its record-year forecast...",
+    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=600&fit=crop",
+    link: "/news/revenue-h1-2025",
   },
 ];
 
 export function NewsroomSection() {
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-16 bg-secondary/30">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
-          <div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-              SHELLY NEWSROOM
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-4">
-              Latest news and updates
-            </h2>
-          </div>
+        <div className="text-center mb-10">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Shelly Newsroom
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Catch up on the latest launches, integrations, and company milestones.
+          </p>
           <Link
             to="/news"
-            className="mt-4 md:mt-0 inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
           >
-            View all news
+            Learn more
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 
-        {/* News Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* News Carousel/Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {newsItems.map((item) => (
             <Link
               key={item.id}
               to={item.link}
-              className="group bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+              className="group bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-all"
             >
               {/* Image */}
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="aspect-square overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -72,22 +71,16 @@ export function NewsroomSection() {
               </div>
               
               {/* Content */}
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
-                    {item.category}
-                  </span>
-                  <span className="flex items-center gap-1 text-muted-foreground text-sm">
-                    <Calendar className="w-3.5 h-3.5" />
-                    {item.date}
-                  </span>
-                </div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
+              <div className="p-4">
+                <h3 className="font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
+                <p className="text-muted-foreground text-sm line-clamp-2 mb-3">
                   {item.excerpt}
                 </p>
+                <span className="text-primary text-sm font-semibold">
+                  Read Article
+                </span>
               </div>
             </Link>
           ))}
