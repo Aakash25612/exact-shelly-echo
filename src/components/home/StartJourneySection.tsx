@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import journeySmartHome from "@/assets/journey-smart-home.jpg";
+import journeySmartBusiness from "@/assets/journey-smart-business.jpg";
 
 export function StartJourneySection() {
   return (
@@ -19,7 +21,7 @@ export function StartJourneySection() {
             className="group relative rounded-lg overflow-hidden h-[280px]"
           >
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop"
+              src={journeySmartHome}
               alt="Smart Home Automation"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -37,7 +39,7 @@ export function StartJourneySection() {
             className="group relative rounded-lg overflow-hidden h-[280px]"
           >
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=500&fit=crop"
+              src={journeySmartBusiness}
               alt="Smart Business & Facilities"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />

@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import productPill from "@/assets/product-pill-device.jpg";
+import productPowerStrip from "@/assets/product-power-strip.jpg";
+import productWallDisplay from "@/assets/product-wall-display.jpg";
+import productWallDisplayXl from "@/assets/product-wall-display-xl.jpg";
+import productButtonRemote from "@/assets/product-button-remote.jpg";
+import productButtonTough from "@/assets/product-button-tough.jpg";
+import productFloodSensor from "@/assets/product-flood-sensor.jpg";
+import productTrvThermostat from "@/assets/product-trv-thermostat.jpg";
 
 const categories = [
   { id: "new", name: "New" },
@@ -17,56 +25,56 @@ const products = [
     id: 1,
     name: "The Pill by Shelly",
     price: "9,82 €",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop",
+    image: productPill,
     category: "new",
   },
   {
     id: 2,
     name: "Shelly Power Strip 4 Gen4",
     price: "59,90 €",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=300&h=300&fit=crop",
+    image: productPowerStrip,
     category: "new",
   },
   {
     id: 3,
     name: "Shelly Wall Display X2i",
     price: "196,23 €",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&h=300&fit=crop",
+    image: productWallDisplay,
     category: "new",
   },
   {
     id: 4,
     name: "Shelly Wall Display XL",
     price: "289,00 €",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=300&h=300&fit=crop",
+    image: productWallDisplayXl,
     category: "bestsellers",
   },
   {
     id: 5,
     name: "Shelly BLU RC Button 4 ZB",
     price: "18,92 €",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop",
+    image: productButtonRemote,
     category: "new",
   },
   {
     id: 6,
     name: "Shelly BLU Button Tough 1 ZB",
     price: "21,30 €",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=300&h=300&fit=crop",
+    image: productButtonTough,
     category: "security",
   },
   {
     id: 7,
     name: "Shelly Flood Gen4",
     price: "29,63 €",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&h=300&fit=crop",
+    image: productFloodSensor,
     category: "security",
   },
   {
     id: 8,
     name: "Shelly BLU TRV Starter Kit",
     price: "71,28 €",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=300&h=300&fit=crop",
+    image: productTrvThermostat,
     category: "heating",
   },
 ];

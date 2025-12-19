@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import appPhoneDashboard from "@/assets/app-phone-dashboard.jpg";
+import appTabletControls from "@/assets/app-tablet-controls.jpg";
+import appTabletEnergy from "@/assets/app-tablet-energy.jpg";
+
 const useCaseIcons = [{
   id: 1,
   name: "Smart Lighting",
@@ -16,6 +20,7 @@ const useCaseIcons = [{
   name: "Safety & Security",
   icon: "🔒"
 }];
+
 export function SmartHomeSection() {
   return <section className="py-16 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
@@ -38,7 +43,7 @@ export function SmartHomeSection() {
           <div className="hidden md:block w-[180px] lg:w-[220px]">
             <div className="bg-shelly-dark rounded-xl p-2 shadow-2xl">
               <div className="bg-[#1a1a2e] rounded-lg overflow-hidden aspect-[4/3]">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Shelly App Dashboard" className="w-full h-full object-cover opacity-80" />
+                <img src={appTabletControls} alt="Shelly App Dashboard" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>
@@ -47,7 +52,7 @@ export function SmartHomeSection() {
           <div className="w-[140px] md:w-[160px] lg:w-[180px] -mb-4">
             <div className="bg-shelly-dark rounded-[2rem] p-2 shadow-2xl">
               <div className="bg-[#1a1a2e] rounded-[1.5rem] overflow-hidden aspect-[9/19]">
-                <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=300&h=600&fit=crop" alt="Shelly Mobile App" className="w-full h-full object-cover opacity-80" />
+                <img src={appPhoneDashboard} alt="Shelly Mobile App" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>
@@ -56,7 +61,7 @@ export function SmartHomeSection() {
           <div className="hidden md:block w-[180px] lg:w-[220px]">
             <div className="bg-shelly-dark rounded-xl p-2 shadow-2xl">
               <div className="bg-[#1a1a2e] rounded-lg overflow-hidden aspect-[4/3]">
-                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=400&h=300&fit=crop" alt="Shelly App Controls" className="w-full h-full object-cover opacity-80" />
+                <img src={appTabletEnergy} alt="Shelly App Controls" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>

@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { Lightbulb, Thermometer, LayoutGrid, Shield } from "lucide-react";
+import solutionLighting from "@/assets/solution-smart-lighting.jpg";
+import solutionBlinds from "@/assets/solution-smart-blinds.jpg";
+import solutionClimate from "@/assets/solution-smart-climate.jpg";
+import solutionSecurity from "@/assets/solution-smart-security.jpg";
 
 const solutions = [
   {
     id: 1,
     title: "Smart Lighting",
     description: "Automate your lights for convenience, ambiance, and energy savings",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&h=600&fit=crop",
+    image: solutionLighting,
     icon: Lightbulb,
     link: "/solutions/lighting",
   },
@@ -14,7 +18,7 @@ const solutions = [
     id: 2,
     title: "Smart Covers & Blinds",
     description: "Automate your curtains, blinds, roller shutters, and awnings for comfort and energy savings",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=600&fit=crop",
+    image: solutionBlinds,
     icon: LayoutGrid,
     link: "/solutions/covers",
   },
@@ -22,7 +26,7 @@ const solutions = [
     id: 3,
     title: "Smart Heating & Climate",
     description: "Control the temperature remotely, set schedules, and optimize energy use",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400&h=600&fit=crop",
+    image: solutionClimate,
     icon: Thermometer,
     link: "/solutions/climate",
   },
@@ -30,7 +34,7 @@ const solutions = [
     id: 4,
     title: "Smart Safety & Security",
     description: "Keep your home safe with smart sensors and monitor it from anywhere",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=400&h=600&fit=crop",
+    image: solutionSecurity,
     icon: Shield,
     link: "/solutions/security",
   },
