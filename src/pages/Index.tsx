@@ -4,11 +4,11 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { StatsBar } from "@/components/home/StatsBar";
 import { ProductsSection } from "@/components/home/ProductsSection";
-import { WhyShellySection } from "@/components/home/WhyShellySection";
 import { UseCasesSection } from "@/components/home/UseCasesSection";
 import { NewsroomSection } from "@/components/home/NewsroomSection";
+import { StartJourneySection } from "@/components/home/StartJourneySection";
+import { CompatibilitySection } from "@/components/home/CompatibilitySection";
 import { EasyStepsSection } from "@/components/home/EasyStepsSection";
-import { GetStartedSection } from "@/components/home/GetStartedSection";
 
 const Index = () => {
   return (
@@ -19,11 +19,11 @@ const Index = () => {
         <HeroCarousel />
         <StatsBar />
         <ProductsSection />
-        <WhyShellySection />
         <UseCasesSection />
-        <EasyStepsSection />
         <NewsroomSection />
-        <GetStartedSection />
+        <StartJourneySection />
+        <CompatibilitySection />
+        <EasyStepsSection />
       </main>
       <Footer />
     </div>
