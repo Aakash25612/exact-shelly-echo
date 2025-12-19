@@ -35,7 +35,7 @@ const newsItems = [
 
 export function NewsroomSection() {
   return (
-    <section className="py-12 bg-[#2596be]">
+    <section className="py-12 bg-[#0d161b]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {/* Left Column - Header */}
@@ -48,7 +48,7 @@ export function NewsroomSection() {
             </p>
             <Link
               to="/news"
-              className="inline-block px-4 py-2 rounded-full bg-white text-[#2596be] text-xs font-medium hover:bg-white/90 transition-colors"
+              className="inline-block px-4 py-2 rounded-full bg-primary text-white text-xs font-medium hover:bg-primary/90 transition-colors"
             >
               Learn more
             </Link>
