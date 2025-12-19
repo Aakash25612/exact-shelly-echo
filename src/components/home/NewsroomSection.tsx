@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
+import newsUkExpansion from "@/assets/news-uk-expansion.jpg";
+import newsSolarPartnership from "@/assets/news-solar-partnership.jpg";
 
 const newsItems = [
   {
     id: 1,
     title: "Shelly's presence in the UK has just grown stronger: our devices are now available via...",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+    image: newsUkExpansion,
     link: "/news/uk-expansion",
     size: "medium",
   },
   {
     id: 2,
     title: "Shelly Group Announces Its First Co-Branded Devices in Partnership with Global Energy and Solar Technology",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400&h=200&fit=crop",
+    image: newsSolarPartnership,
     link: "/news/co-branded",
     size: "small",
   },
@@ -19,7 +21,6 @@ const newsItems = [
     id: 3,
     title: "Berenberg Initiates Coverage of Shelly Group with Buy Rating",
     subtitle: "IoT Internet of Things",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
     link: "/news/berenberg",
     size: "medium",
   },

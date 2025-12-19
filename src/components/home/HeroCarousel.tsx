@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroHoliday from "@/assets/hero-holiday-smart-home.jpg";
+import heroWallDisplay from "@/assets/hero-wall-display.jpg";
+import heroPowerStrip from "@/assets/hero-power-strip.jpg";
+import heroSmartController from "@/assets/hero-smart-controller.jpg";
 
 const slides = [
   {
@@ -10,7 +14,7 @@ const slides = [
     titleLine3: "Ready with Shelly",
     cta: "Learn more",
     ctaLink: "/holiday",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop",
+    image: heroHoliday,
   },
   {
     id: 2,
@@ -19,7 +23,7 @@ const slides = [
     description: "Comes in three sizes: 4\", 7\", and 10\" - all sleek, smart, and ready to manage lighting, climate, custom scenes and more.",
     cta: "Shop Now",
     ctaLink: "/products/displays",
-    image: "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=1920&h=800&fit=crop",
+    image: heroWallDisplay,
   },
   {
     id: 3,
@@ -28,7 +32,7 @@ const slides = [
     titleLine3: "a Compact Strip",
     cta: "Shop Now",
     ctaLink: "/products/power-strip",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1920&h=800&fit=crop",
+    image: heroPowerStrip,
   },
   {
     id: 4,
@@ -37,7 +41,7 @@ const slides = [
     features: ["Monitors Sensors Controls", "Outputs and Automates Actions"],
     cta: "Shop Now",
     ctaLink: "/products/pill",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=1920&h=800&fit=crop",
+    image: heroSmartController,
   },
 ];
 
