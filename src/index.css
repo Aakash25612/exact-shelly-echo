@@ -36,11 +36,11 @@
 
     --radius: 0.5rem;
 
-    /* Shelly specific colors */
-    --shelly-blue: 209 100% 45%;
-    --shelly-dark: 220 25% 10%;
-    --shelly-navy: 220 30% 15%;
-    --shelly-gray: 220 10% 50%;
+    /* Your brand specific colors */
+    --brand-blue: 209 100% 45%;
+    --brand-dark: 220 25% 10%;
+    --brand-navy: 220 30% 15%;
+    --brand-gray: 220 10% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -115,7 +115,7 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .shelly-logo {
+  .brand-logo {
     font-family: 'Outfit', sans-serif;
     font-style: italic;
     font-weight: 600;
