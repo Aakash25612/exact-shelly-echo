@@ -2,7 +2,7 @@ import { Truck } from "lucide-react";
 
 export function TopBar() {
   return (
-    <div className="bg-shelly-dark text-white py-2">
+    <div className="bg-brand-dark text-white py-2">
       <div className="container mx-auto px-4 flex items-center justify-between text-sm">
         {/* Free Delivery Message */}
         <div className="flex-1 flex justify-center items-center gap-2">

@@ -51,11 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        shelly: {
-          blue: "hsl(var(--shelly-blue))",
-          dark: "hsl(var(--shelly-dark))",
-          navy: "hsl(var(--shelly-navy))",
-          gray: "hsl(var(--shelly-gray))",
+        brand: {
+          blue: "hsl(var(--brand-blue))",
+          dark: "hsl(var(--brand-dark))",
+          navy: "hsl(var(--brand-navy))",
+          gray: "hsl(var(--brand-gray))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

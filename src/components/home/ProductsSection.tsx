@@ -23,7 +23,7 @@ const categories = [
 const products = [
   {
     id: 1,
-    name: "Shelly BLU H&T Display ZB",
+    name: "Your brand BLU H&T Display ZB",
     price: "16,72 €",
     image: productWallDisplay,
     category: "new",
@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 2,
-    name: "The Pill by Shelly",
+    name: "The Pill by Your brand",
     price: "8,25 €",
     image: productPill,
     category: "new",
@@ -43,7 +43,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Shelly Power Strip 4 Gen4",
+    name: "Your brand Power Strip 4 Gen4",
     price: "50,34 €",
     image: productPowerStrip,
     category: "new",
@@ -54,7 +54,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Shelly Wall Display X2i",
+    name: "Your brand Wall Display X2i",
     price: "164,90 €",
     image: productWallDisplayXl,
     category: "bestsellers",
@@ -65,7 +65,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Shelly Wall Display XL",
+    name: "Your brand Wall Display XL",
     price: "242,86 €",
     image: productWallDisplayXl,
     category: "new",
@@ -76,7 +76,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Shelly BLU Button Tough 1 ZB",
+    name: "Your brand BLU Button Tough 1 ZB",
     price: "21,30 €",
     image: productButtonTough,
     category: "security",
@@ -86,7 +86,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Shelly Flood Gen4",
+    name: "Your brand Flood Gen4",
     price: "29,63 €",
     image: productFloodSensor,
     category: "security",
@@ -96,7 +96,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Shelly BLU TRV Starter Kit",
+    name: "Your brand BLU TRV Starter Kit",
     price: "71,28 €",
     image: productTrvThermostat,
     category: "heating",

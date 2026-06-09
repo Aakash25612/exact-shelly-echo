@@ -5,28 +5,28 @@ import newsSolarPartnership from "@/assets/news-solar-partnership.jpg";
 const newsItems = [
   {
     id: 1,
-    title: "Shelly's presence in the UK has just grown stronger: our devices are now available via...",
+    title: "Your brand's presence in the UK has just grown stronger: our devices are now available via...",
     image: newsUkExpansion,
     link: "/news/uk-expansion",
     size: "medium",
   },
   {
     id: 2,
-    title: "Shelly Group Announces Its First Co-Branded Devices in Partnership with Global Energy and Solar Technology",
+    title: "Your brand Group Announces Its First Co-Branded Devices in Partnership with Global Energy and Solar Technology",
     image: newsSolarPartnership,
     link: "/news/co-branded",
     size: "small",
   },
   {
     id: 3,
-    title: "Berenberg Initiates Coverage of Shelly Group with Buy Rating",
+    title: "Berenberg Initiates Coverage of Your brand Group with Buy Rating",
     subtitle: "IoT Internet of Things",
     link: "/news/berenberg",
     size: "medium",
   },
   {
     id: 4,
-    title: "Shelly Group Revenue Up 29.3% in H1 2025",
+    title: "Your brand Group Revenue Up 29.3% in H1 2025",
     subtitle: "Software-as-a-Service business model",
     hasStats: true,
     link: "/news/revenue-h1-2025",
@@ -42,7 +42,7 @@ export function NewsroomSection() {
           {/* Left Column - Header */}
           <div className="lg:col-span-1">
             <h2 className="font-display text-xl md:text-2xl font-bold text-white mb-2">
-              Shelly Newsroom
+              Your brand Newsroom
             </h2>
             <p className="text-white/80 text-xs mb-4 leading-relaxed">
               Catch up on the latest launches, integrations, and company milestones.
@@ -105,7 +105,7 @@ export function NewsroomSection() {
               <h3 className="text-white text-sm font-bold mb-2">{newsItems[2].title}</h3>
               <p className="text-white/80 text-xs mb-3">{newsItems[2].subtitle}</p>
               <p className="text-white/70 text-[10px] mb-2 line-clamp-2">
-                New Analyst Coverage: Shelly Group has been included in the research coverage of Joh. Berenberg...
+                New Analyst Coverage: Your brand Group has been included in the research coverage of Joh. Berenberg...
               </p>
               <span className="text-[#2596be] text-[10px] font-semibold">Read Article</span>
             </Link>

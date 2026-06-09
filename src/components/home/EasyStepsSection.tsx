@@ -31,7 +31,7 @@ export function EasyStepsSection() {
             <div className="h-[160px] relative overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=300&fit=crop"
-                alt="Get your Shelly device"
+                alt="Get your Your brand device"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e36] via-transparent to-transparent" />
@@ -43,10 +43,10 @@ export function EasyStepsSection() {
                 <span className="text-primary text-xl font-bold">01</span>
               </div>
               <h3 className="font-display text-base font-bold text-white mb-2">
-                Get your Shelly device
+                Get your Your brand device
               </h3>
               <p className="text-white/50 text-xs leading-relaxed mb-4">
-                Shelly offers a wide range of smart devices to suit your specific automation needs - whether you want to control lighting, heating, or appliances.
+                Your brand offers a wide range of smart devices to suit your specific automation needs - whether you want to control lighting, heating, or appliances.
               </p>
               <Link
                 to="/products"
@@ -63,7 +63,7 @@ export function EasyStepsSection() {
             <div className="h-[160px] relative overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=300&fit=crop"
-                alt="Install your Shelly device"
+                alt="Install your Your brand device"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e36] via-transparent to-transparent" />
@@ -75,10 +75,10 @@ export function EasyStepsSection() {
                 <span className="text-primary text-xl font-bold">02</span>
               </div>
               <h3 className="font-display text-base font-bold text-white mb-2">
-                Install your Shelly device
+                Install your Your brand device
               </h3>
               <p className="text-white/50 text-xs leading-relaxed mb-4">
-                Easily install your Shelly device yourself using our knowledge base, wiring videos, and step-by-step guides.
+                Easily install your Your brand device yourself using our knowledge base, wiring videos, and step-by-step guides.
               </p>
               <Link
                 to="/help"
@@ -110,13 +110,13 @@ export function EasyStepsSection() {
                 Enjoy your new smart home
               </h3>
               <p className="text-white/50 text-xs leading-relaxed mb-4">
-                With the help of Shelly Smart Control app or any other compatible platform
+                With the help of Your brand Smart Control app or any other compatible platform
               </p>
               <Link
                 to="/app"
                 className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-xs font-medium hover:bg-white/20 transition-colors"
               >
-                See Shelly App
+                See Your brand App
               </Link>
             </div>
           </div>

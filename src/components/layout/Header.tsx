@@ -5,8 +5,8 @@ import { Search, ShoppingCart, User, Menu, X, ChevronDown } from "lucide-react";
 const leftNav = [
   { name: "Products", href: "/products", hasDropdown: true },
   { name: "Solutions", href: "/solutions", hasDropdown: true },
-  { name: "Shelly App", href: "/app" },
-  { name: "Shelly X", href: "/shelly-x" },
+  { name: "Your brand App", href: "/app" },
+  { name: "Your brand X", href: "/brand-x" },
 ];
 
 const rightNav = [
@@ -31,7 +31,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="group flex items-center gap-1 text-sm font-medium text-shelly-dark hover:text-primary transition-colors"
+                  className="group flex items-center gap-1 text-sm font-medium text-brand-dark hover:text-primary transition-colors"
                 >
                   {item.name}
                   {item.hasDropdown && (
@@ -43,7 +43,7 @@ export function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 text-shelly-dark"
+              className="lg:hidden p-2 text-brand-dark"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -52,8 +52,8 @@ export function Header() {
 
             {/* Logo - Centered */}
             <Link to="/" className="flex-shrink-0">
-              <span className="shelly-logo text-2xl text-shelly-dark italic font-semibold tracking-tight">
-                Shelly
+              <span className="brand-logo text-2xl text-brand-dark italic font-semibold tracking-tight">
+                Your brand
               </span>
             </Link>
 
@@ -63,7 +63,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="group flex items-center gap-1 text-sm font-medium text-shelly-dark hover:text-primary transition-colors"
+                  className="group flex items-center gap-1 text-sm font-medium text-brand-dark hover:text-primary transition-colors"
                 >
                   {item.name}
                   {item.hasDropdown && (
@@ -74,13 +74,13 @@ export function Header() {
               
               {/* Icons */}
               <div className="flex items-center gap-1 ml-2">
-                <button className="p-2 text-shelly-dark hover:text-primary transition-colors">
+                <button className="p-2 text-brand-dark hover:text-primary transition-colors">
                   <Search className="h-5 w-5" />
                 </button>
-                <button className="p-2 text-shelly-dark hover:text-primary transition-colors">
+                <button className="p-2 text-brand-dark hover:text-primary transition-colors">
                   <User className="h-5 w-5" />
                 </button>
-                <button className="relative p-2 text-shelly-dark hover:text-primary transition-colors">
+                <button className="relative p-2 text-brand-dark hover:text-primary transition-colors">
                   <ShoppingCart className="h-5 w-5" />
                   {cartCount > 0 && (
                     <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-semibold text-white">
@@ -93,10 +93,10 @@ export function Header() {
 
             {/* Mobile Icons */}
             <div className="flex items-center gap-1 lg:hidden">
-              <button className="p-2 text-shelly-dark hover:text-primary transition-colors">
+              <button className="p-2 text-brand-dark hover:text-primary transition-colors">
                 <Search className="h-5 w-5" />
               </button>
-              <button className="relative p-2 text-shelly-dark hover:text-primary transition-colors">
+              <button className="relative p-2 text-brand-dark hover:text-primary transition-colors">
                 <ShoppingCart className="h-5 w-5" />
               </button>
             </div>
@@ -114,7 +114,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="flex items-center justify-between py-3 px-3 text-sm font-medium text-shelly-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
+                  className="flex items-center justify-between py-3 px-3 text-sm font-medium text-brand-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -129,7 +129,7 @@ export function Header() {
             <div className="mt-4 pt-4 border-t border-gray-100">
               <Link
                 to="/account"
-                className="flex items-center gap-3 py-3 px-3 text-sm font-medium text-shelly-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
+                className="flex items-center gap-3 py-3 px-3 text-sm font-medium text-brand-dark hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <User className="h-5 w-5" />

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const stats = [
   { value: 5.2, suffix: " + M", label: "Households", decimals: 1 },
-  { value: 28.8, suffix: " + M", label: "Shelly devices sold", decimals: 1 },
-  { value: 100, suffix: " +", label: "Countries using Shelly", decimals: 0 },
+  { value: 28.8, suffix: " + M", label: "Your brand devices sold", decimals: 1 },
+  { value: 100, suffix: " +", label: "Countries using Your brand", decimals: 0 },
   { value: 40, suffix: " %", label: "Energy savings for homes & businesses", decimals: 0 },
 ];
 
@@ -76,8 +76,8 @@ export function StatsBar() {
             className="flex items-center gap-4 bg-[#1a2d47] rounded-2xl px-6 py-4 hover:bg-[#243a59] transition-colors group ml-auto"
           >
             <div className="flex flex-col">
-              <span className="shelly-logo text-xl text-white italic font-semibold">
-                Shelly
+              <span className="brand-logo text-xl text-white italic font-semibold">
+                Your brand
               </span>
               <span className="text-white/80 text-sm">Real-time Dashboard</span>
             </div>
