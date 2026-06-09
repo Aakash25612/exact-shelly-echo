@@ -49,7 +49,7 @@ const solutions = [
   },
 ];
 
-export function ShellySolutionsSection() {
+export function BrandSolutionsSection() {
   const [expandedId, setExpandedId] = useState<number | null>(5); // Start with security expanded
 
   return (
