@@ -20,7 +20,7 @@ const Index = () => {
         <StatsBar />
         <ProductsSection />
         <SmartHomeSection />
-        <ShellySolutionsSection />
+        <BrandSolutionsSection />
         <NewsroomSection />
         <StartJourneySection />
         <EasyStepsSection />
