@@ -49,7 +49,7 @@ const solutions = [
   },
 ];
 
-export function ShellySolutionsSection() {
+export function BrandSolutionsSection() {
   const [expandedId, setExpandedId] = useState<number | null>(5); // Start with security expanded
 
   return (
@@ -61,7 +61,7 @@ export function ShellySolutionsSection() {
             USE CASES
           </span>
           <h2 className="font-display text-xl md:text-2xl font-bold text-white">
-            Shelly solutions
+            Your brand solutions
           </h2>
         </div>
 

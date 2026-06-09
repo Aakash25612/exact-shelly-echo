@@ -11,14 +11,14 @@ const slides = [
     id: 1,
     title: "Get Your Smart",
     titleLine2: "Home Holiday-",
-    titleLine3: "Ready with Shelly",
+    titleLine3: "Ready with Your brand",
     cta: "Learn more",
     ctaLink: "/holiday",
     image: heroHoliday,
   },
   {
     id: 2,
-    title: "Choose Your Shelly",
+    title: "Choose Your Your brand",
     titleLine2: "Wall Display",
     description: "Comes in three sizes: 4\", 7\", and 10\" - all sleek, smart, and ready to manage lighting, climate, custom scenes and more.",
     cta: "Shop Now",
@@ -105,7 +105,7 @@ export function HeroCarousel() {
               )}
               <Link
                 to={slide.ctaLink}
-                className="mt-8 inline-block bg-shelly-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-shelly-dark/90 transition-colors"
+                className="mt-8 inline-block bg-brand-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-brand-dark/90 transition-colors"
               >
                 {slide.cta}
               </Link>

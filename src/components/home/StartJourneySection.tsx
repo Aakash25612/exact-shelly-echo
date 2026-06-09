@@ -9,7 +9,7 @@ export function StartJourneySection() {
         {/* Header */}
         <div className="mb-8">
           <h2 className="font-display text-xl md:text-2xl font-bold text-white">
-            Start your automation journey with Shelly
+            Start your automation journey with Your brand
           </h2>
         </div>
 

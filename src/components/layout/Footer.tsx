@@ -61,7 +61,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-4">
               <span className="text-2xl text-white italic font-semibold">
-                Shelly
+                Your brand
               </span>
             </Link>
             <p className="text-white/50 text-xs max-w-xs mb-5 leading-relaxed">
@@ -107,7 +107,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-3 px-4 lg:px-8 py-4 text-xs text-white/40">
-          <p>© 2024 Shelly Europe. All rights reserved.</p>
+          <p>© 2024 Your brand Europe. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

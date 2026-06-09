@@ -41,27 +41,27 @@ export function SmartHomeSection() {
         <div className="flex justify-center items-end gap-4 md:gap-8 mb-12">
           {/* Tablet Left */}
           <div className="hidden md:block w-[180px] lg:w-[220px]">
-            <div className="bg-shelly-dark rounded-xl p-2 shadow-2xl">
+            <div className="bg-brand-dark rounded-xl p-2 shadow-2xl">
               <div className="bg-[#1a1a2e] rounded-lg overflow-hidden aspect-[4/3]">
-                <img src={appTabletControls} alt="Shelly App Dashboard" className="w-full h-full object-cover opacity-90" />
+                <img src={appTabletControls} alt="Your brand App Dashboard" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>
           
           {/* Phone Center */}
           <div className="w-[140px] md:w-[160px] lg:w-[180px] -mb-4">
-            <div className="bg-shelly-dark rounded-[2rem] p-2 shadow-2xl">
+            <div className="bg-brand-dark rounded-[2rem] p-2 shadow-2xl">
               <div className="bg-[#1a1a2e] rounded-[1.5rem] overflow-hidden aspect-[9/19]">
-                <img src={appPhoneDashboard} alt="Shelly Mobile App" className="w-full h-full object-cover opacity-90" />
+                <img src={appPhoneDashboard} alt="Your brand Mobile App" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>
           
           {/* Tablet Right */}
           <div className="hidden md:block w-[180px] lg:w-[220px]">
-            <div className="bg-shelly-dark rounded-xl p-2 shadow-2xl">
+            <div className="bg-brand-dark rounded-xl p-2 shadow-2xl">
               <div className="bg-[#1a1a2e] rounded-lg overflow-hidden aspect-[4/3]">
-                <img src={appTabletEnergy} alt="Shelly App Controls" className="w-full h-full object-cover opacity-90" />
+                <img src={appTabletEnergy} alt="Your brand App Controls" className="w-full h-full object-cover opacity-90" />
               </div>
             </div>
           </div>

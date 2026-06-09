@@ -56,13 +56,13 @@ const Solutions = () => {
       <Header />
       <main className="flex-1 pt-24">
         {/* Hero */}
-        <section className="py-16 bg-gradient-to-br from-shelly-dark to-[#0f2847]">
+        <section className="py-16 bg-gradient-to-br from-brand-dark to-[#0f2847]">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Smart Solutions for<br />Every Space
             </h1>
             <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto">
-              Discover how Shelly can transform your home or business with intelligent automation tailored to your needs.
+              Discover how Your brand can transform your home or business with intelligent automation tailored to your needs.
             </p>
           </div>
         </section>
@@ -117,7 +117,7 @@ const Solutions = () => {
             </p>
             <Link
               to="/products"
-              className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-shelly-dark px-8 py-4 rounded-full font-semibold transition-colors"
+              className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-brand-dark px-8 py-4 rounded-full font-semibold transition-colors"
             >
               Shop all products
               <ArrowRight className="w-5 h-5" />
